@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="images/heads.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/leon.css">
+    <link rel="stylesheet" href="css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600&family=Rubik&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <audio src="" id="audio" ></audio>
+    <div class="music-player">
+        <div class="header">
+            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/rjzlnunf.json"
+                    trigger="loop"
+                    colors="primary:#ffffff,secondary:#833ab4"
+                    style="width:35px;height:35px " class="lord">
+                </lord-icon>
+            <h2><span>m</span>usic</h2>
+            <i class="search fa-solid fa-magnifying-glass" id="search-btm"></i>
+            <div class="search-form" id="search-formm">
+                <input type="seaech" id="search" placeholder="search here...">
+                <label for="search" class="search fa-solid fa-magnifying-glass"></label>
+            </div>
+        </div>
+        <h1 class="music-name">song 1</h1>
+        <p class="music-artist">artist 1</p>
+        <div class="music-img "></div>
+        <div class="music-container-range">
+            <input type="range" value="0" min="0" max="100" class="music-range">
+            <div class="time">
+                <p class="time-start">00:00</p>
+                <p class="time-end">00:00</p>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="btn back"><i class="ri-arrow-left-s-line"></i></div>
+            <button class="control-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="btn next"><i class="ri-arrow-right-s-line"></i></div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
